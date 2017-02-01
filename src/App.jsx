@@ -2,6 +2,7 @@ import React from 'react';
 
 import { Link, IndexLink } from 'react-router';
 import NavLink from './components/NavLink'
+import books from './data/books';
 
 class App extends React.Component {
     render() {
