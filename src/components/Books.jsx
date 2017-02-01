@@ -1,17 +1,18 @@
 import React from 'react';
+import { Link } from 'react-router';
 
-function Books() {
+function Books(props) {
     return (
         <section className="content books">
             <div className="mdl-tabs">
                 <div className="mdl-tabs__tab-bar">
-                    <a href="/books/javascript" className="mdl-tabs__tab">JavaScript</a>
-                    <a href="/books/react" className="mdl-tabs__tab">React</a>
-                    <a href="/books/angular" className="mdl-tabs__tab">Angular</a>
+                    <Link to="/books/javascript" className="mdl-tabs__tab">JavaScript</Link>
+                    <Link to="/books/react" className="mdl-tabs__tab">React</Link>
+                    <Link to="/books/angular" className="mdl-tabs__tab">Angular</Link>
                 </div>
-                
+
                 <div className="mdl-tabs__panel">
-                    
+                    {props.children}
                 </div>
             </div>
         </section>
